@@ -14,15 +14,14 @@ export default class AnimatedSwitch extends Switch {
 	}
 
   onAnimate = ({ value }) => {
-  	if (value > 0.99) {
-  		this.setState({
+  	const newState = (value > 0.99)
+  		? {
   			display: "inline"
-  		});
-  	} else {
-  		this.setState({
+  		}
+			: {
   			display: "block"
-  		});
-  	}
+  		};
+		this.setState(newState);
   };
 
   componentWillMount() {
@@ -44,10 +43,10 @@ export default class AnimatedSwitch extends Switch {
   		display: this.state.display,
   		opacity: Animated.template`${this.state.animate}`,
   		transform: Animated.template`
-				translate3d(0,${this.state.animate.interpolate({
-		inputRange: [0, 1],
-		outputRange: ["14.4px", "0px"]
-	})},0)
+			scale(${this.state.animate.interpolate({
+				inputRange: [0, 1],
+				outputRange: ["0.9", "1"]
+			})})
 			`
   	};
 

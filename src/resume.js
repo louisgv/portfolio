@@ -1,6 +1,6 @@
 export const BASIC = {
 	name : "Louis Vichy",
-	label: "Research and Development",
+	label: "#hacker",
 	picture: "",
 	email: "lgvichy@gmail.com"
 };
@@ -8,7 +8,6 @@ export const BASIC = {
 export const ABOUT = [
 	"Interested in "
 ];
-
 
 export const INTERESTCARDS = [
 
