@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import {
 	Header,
-	Segment
+	Container as PageContainer
 } from 'semantic-ui-react';
 
 // Global sections:
@@ -24,12 +24,11 @@ const Container = styled(LongPage)`
 export default class Home extends PureComponent {
 	render() {
 		return (
-			<Container>
+			<Container id="outer-container">
 				<Navigation/>
-				<Segment
-					inverted
+				<PageContainer
+					id="page-wrap"
 					textAlign='center'
-					vertical
 				>
 				<Header
 					as='h1'
@@ -43,7 +42,7 @@ export default class Home extends PureComponent {
 					inverted
 					style={{ fontSize: '1.7em', fontWeight: 'normal' }}
 				/>
-				</Segment>
+				</PageContainer>
 				<Footer />
 			</Container>
 		);

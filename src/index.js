@@ -19,13 +19,11 @@ import './index.css';
 // Global page, so it also include some section
 const App = () => (
 	<Router basename="/">
-		<div>
-			<TransitionGroup>
-				<AnimatedSwitch>
-					<Route exact path="/" component={Home} />
-				</AnimatedSwitch>
-			</TransitionGroup>
-		</div>
+		<TransitionGroup>
+			<AnimatedSwitch>
+				<Route exact path="/" component={Home} />
+			</AnimatedSwitch>
+		</TransitionGroup>
 	</Router>
 );
 
