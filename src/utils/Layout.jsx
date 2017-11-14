@@ -19,11 +19,11 @@ export const FooterContainer = styled.footer`
 `
 
 export const NoScrollPage = styled(FlexColumnSection)`
-  height: 85vh;
+  height: 100vh;
 `;
 
 export const LongPage = styled(FlexColumnSection)`
-  min-height: 85vh;
+  min-height: 100vh;
 `;
 
 export const FullHeightColumnFlexSpaceBetweenDiv = styled.div`

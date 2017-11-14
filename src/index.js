@@ -14,27 +14,17 @@ import AnimatedSwitch from 'components/AnimatedSwitch';
 
 import Home from 'pages/Home';
 
-// Global sections:
-import Header from "sections/Header";
-import Footer from "sections/Footer";
-
 import './index.css';
-
-const headerRoutes = [
-	
-]
 
 // Global page, so it also include some section
 const App = () => (
 	<Router basename="/">
 		<div>
-			<Header routes={headerRoutes} />
 			<TransitionGroup>
 				<AnimatedSwitch>
 					<Route exact path="/" component={Home} />
 				</AnimatedSwitch>
 			</TransitionGroup>
-			<Footer />
 		</div>
 	</Router>
 );
