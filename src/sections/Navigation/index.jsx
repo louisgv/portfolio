@@ -22,15 +22,13 @@ import {
 
 import './index.css';
 
-const {location} = window;
-
 const StyledHeader = styled(HeaderContainer)`
 	top: 0;
 	width: 100vw;
 `;
 
 const FixedMenu = ({children}) => (
-	<Menu fixed='top' size='large'>
+	<Menu fixed='top' inverted pointing secondary size='large'>
     <Container>
       <Menu.Menu position='right'>
 	    	{children}

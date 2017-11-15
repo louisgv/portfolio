@@ -5,13 +5,18 @@ import styled from 'styled-components';
 import {
 	Header,
 	Container,
-	Popup,
 	Responsive
 } from 'semantic-ui-react';
 
-// Global sections:
-import Navigation from "sections/Navigation";
-import Footer from "sections/Footer";
+import SocialMedia from 'components/SocialMedia';
+
+const StyledContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 99vh;
+`
 
 const HackerBanner =({anchorClass})=> (
 	<a target="_blank" rel="noopener noreferrer" className={anchorClass} href="http://catb.org/jargon/html/H/hacker.html">
@@ -43,21 +48,19 @@ const DesktopHackerBanner =()=> (
 export default class Hero extends PureComponent {
 	render() {
 		return (
-			<Container
-				id="page-wrap"
-				textAlign='center'
-			>
-			<Header
-				as='h1'
-				content='Louis Vichy'
-				inverted
-				style={{ fontSize: '4.5em', fontWeight: 'normal'}}
-			/>
+			<StyledContainer id={this.props.id}>
+				<Header
+					as='h1'
+					content='Louis Vichy'
+					inverted
+					style={{ fontSize: '4.5em', fontWeight: 'normal'}}
+				/>
 
-			<DesktopHackerBanner/>
-			<MobileHackerBanner/>
+				<DesktopHackerBanner/>
+				<MobileHackerBanner/>
 
-			</Container>
+				<SocialMedia />
+			</StyledContainer>
 		);
 	}
 }

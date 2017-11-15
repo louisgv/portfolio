@@ -6,6 +6,7 @@ import Navigation from "sections/Navigation";
 import Footer from "sections/Footer";
 
 import Hero from 'sections/Hero';
+import About from 'sections/About';
 
 import {
 	LongPage
@@ -22,7 +23,10 @@ export default class Home extends PureComponent {
 		return (
 			<Container id="outer-container">
 				<Navigation/>
-				<Hero/>
+				<div id="page-wrap">
+					<Hero id="Home"/>
+					<About id="About"/>
+				</div>
 				<Footer />
 			</Container>
 		);
