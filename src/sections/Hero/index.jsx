@@ -40,7 +40,7 @@ export default class Hero extends PureComponent {
 
 				<Divider horizontal inverted section/>
 
-				 <Grid columns={SOCIAL.length}>
+				 <Grid stretched padded doubling columns={SOCIAL.length}>
 					{ SOCIAL.map(SocialMedia) }
 				 </Grid>
 
