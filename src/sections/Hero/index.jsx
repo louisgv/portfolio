@@ -1,11 +1,12 @@
 import React, { PureComponent } from "react";
 
 import styled from 'styled-components';
+import mediaQuery from 'styled-media-query';
 
 import {
 	Header,
 	Responsive,
-Divider,
+	Divider,
 	Grid
 } from 'semantic-ui-react';
 
@@ -22,6 +23,12 @@ import { SOCIAL } from 'resume';
 
 const StyledContainer = styled(FlexColumnCenterDiv)`
 	height: 99vh;
+
+	${mediaQuery.lessThan('small')`
+  	padding-top: 36vh;
+  `}
+
+
 `
 
 export default class Hero extends PureComponent {
