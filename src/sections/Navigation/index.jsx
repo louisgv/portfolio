@@ -18,6 +18,8 @@ import {
 	HeaderContainer
 } from 'utils/Layout';
 
+import {SECTIONS as menus} from 'resume';
+
 import Hero from 'sections/Hero';
 
 import './index.css';
@@ -62,11 +64,9 @@ const MobileNavigation =({isOpen, children})=> (
 	</Responsive>
 )
 
-const MENU = ['Top', 'About', 'Work', 'Education', 'Skills', 'Portfolio'];
-
 export default class Navigation extends React.Component {
 	state = {
-		activeItem: MENU[0],
+		activeItem: menus[0],
 		visible: false,
 		open: false
 	}
@@ -88,7 +88,7 @@ export default class Navigation extends React.Component {
 			open
 		} = this.state
 
-		const MenuItems = MENU.map((item, i) => (
+		const MenuItems = menus.map((item, i) => (
 			<Menu.Item as='a' href={`#${item}`} key={i} onClick={this.handleItemClick}
 				active={activeItem === item} name={item}/>
 		))

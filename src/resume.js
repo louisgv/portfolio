@@ -1,45 +1,88 @@
+export const SECTIONS = ['Top', 'About', 'Work', 'Education', 'Skills', 'Portfolio'];
+
 export const BASIC = {
-	name : "Louis Vichy",
+	name: "Louis Vichy",
 	label: "#hacker",
 	picture: "",
 	email: "lgvichy@gmail.com"
 };
 
-export const ABOUT = [
-	"Interested in "
+export const HOBBIES = [
+	{
+		"name": "Hacking on cutting edge technology",
+		"color": "orange",
+		"icon": "terminal",
+		"url": "https://louisgv.github.io/dev/www/index.html#/",
+	},
+	{
+		"name": "Reading research paper",
+		"color": "yellow",
+		"icon": "sticky note",
+		"url": "https://arxiv.org/",
+	},
+	{
+		"name": "Listening to scientific podcast",
+		"color": "olive",
+		"icon": "podcast",
+		"url": "https://twit.tv/shows/floss-weekly",
+	},
+	{
+		"name": "Kick-boxing",
+		"color": "green",
+		"icon": "grab",
+		"url": "https://en.wikipedia.org/wiki/Kickboxing",
+	},
 ];
 
-export const INTERESTCARDS = [
+export const INTERESTS = [
+	{
+		"name": "Lifespan extension",
+		"color": "pink",
+		"icon": "power",
+		"url": "http://bfy.tw/DjIj",
+	},
+	{
+		"name": "Machine learning",
+		"color": "purple",
+		"icon": "linkify",
+		"url": "http://bfy.tw/DjIj",
+	},
+	{
+		"name": "Decentralization",
+		"color": "brown",
+		"icon": "unlinkify",
+		"url": "http://bfy.tw/DjIr",
+	}
+]
 
-];
 
-export const SOCIAL = [
+export const SOCIALS = [
 	{
 		"name": "R.I.T",
 		"color": "green",
-		"net" : "pied piper hat",
-		"url" : "https://people.rit.edu/hhn2884/230/",
-		"uid" : "lab"
+		"icon": "pied piper hat",
+		"url": "https://people.rit.edu/hhn2884/230/",
+		"uid": "lab"
 	},
 	{
 		"name": "Twitter",
-		"color" : "teal",
-		"net" : "twitter",
-		"url" : "https://twitter.com/LGVichy",
-		"uid" : "LGVichy"
+		"color": "teal",
+		"icon": "twitter",
+		"url": "https://twitter.com/LGVichy",
+		"uid": "LGVichy"
 	},
 	{
 		"name": "LinkedIn",
-		"color" : "blue",
-		"net" : "linkedin",
-		"url" : "https://www.linkedin.com/in/louisgv/",
-		"uid" : "louisgv"
+		"color": "blue",
+		"icon": "linkedin",
+		"url": "https://www.linkedin.com/in/louisgv/",
+		"uid": "louisgv"
 	},
 	{
 		"name": "GitHub",
-		"color" : "purple",
-		"net" : "github",
-		"url" : "https://github.com/louisgv/",
-		"uid" : "louisgv"
+		"color": "purple",
+		"icon": "github",
+		"url": "https://github.com/louisgv/",
+		"uid": "louisgv"
 	},
 ]

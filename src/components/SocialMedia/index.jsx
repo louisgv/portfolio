@@ -6,13 +6,13 @@ import {
 	Grid
 } from 'semantic-ui-react';
 
-export default ({name, color, net, url}, i) => (
+export default ({name, color, icon, url}, i) => (
 	<Grid.Column stretched key={i}>
-		<Button animated='fade' color={color} inverted size={'massive'} circular>
+		<Button as='a' href={url} target='_blank' animated='fade' color={color} inverted size={'massive'} circular>
 			<Button.Content visible>
-				<Icon name={net} />
+				<Icon name={icon} />
 			</Button.Content>
-			<Button.Content hidden style={{fontSize: "0.81em"}}>
+			<Button.Content hidden style={{fontSize: "81%", lineHeight: "1em"}}>
 				{name}
 			</Button.Content>
 		</Button>

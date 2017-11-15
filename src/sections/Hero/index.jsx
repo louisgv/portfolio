@@ -5,7 +5,6 @@ import mediaQuery from 'styled-media-query';
 
 import {
 	Header,
-	Responsive,
 	Divider,
 	Grid
 } from 'semantic-ui-react';
@@ -19,7 +18,7 @@ import {
 
 import {FlexColumnCenterDiv} from 'utils/Layout';
 
-import { SOCIAL } from 'resume';
+import { SOCIALS as socials } from 'resume';
 
 const StyledContainer = styled(FlexColumnCenterDiv)`
 	height: 99vh;
@@ -46,8 +45,8 @@ export default class Hero extends PureComponent {
 
 				<Divider horizontal inverted section/>
 
-				 <Grid stretched padded doubling columns={SOCIAL.length}>
-					{ SOCIAL.map(SocialMedia) }
+				 <Grid stretched padded doubling columns={socials.length}>
+					{ socials.map(SocialMedia) }
 				 </Grid>
 
 			</StyledContainer>
