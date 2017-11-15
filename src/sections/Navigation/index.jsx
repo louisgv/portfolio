@@ -6,7 +6,7 @@ import {
 	Visibility,
 } from 'semantic-ui-react'
 
-import { pushRotate as BurgerMenu } from 'react-burger-menu'
+import { stack as BurgerMenu } from 'react-burger-menu'
 
 // import {
 // 	NavLink
@@ -49,27 +49,26 @@ const DesktopNavigation = ({children}) => (
 				inverted pointing secondary
 				size='massive'
 				minWidth={Responsive.onlyTablet.minWidth}>
-
 			{children}
-
 	</Responsive>
 )
 
-const MobileNavigation =({children})=> (
+const MobileNavigation =({isOpen, children})=> (
 	<Responsive as={BurgerMenu}
+			isOpen={isOpen}
 			{...Responsive.onlyMobile}
-			pageWrapId={ "page-wrap" }
-			outerContainerId={ "Home" } right>
+			right>
   		{children}
 	</Responsive>
 )
 
-const MENU = ['Home', 'About', 'Work', 'Education', 'Skills', 'Portfolio'];
+const MENU = ['Top', 'About', 'Work', 'Education', 'Skills', 'Portfolio'];
 
 export default class Navigation extends React.Component {
 	state = {
 		activeItem: MENU[0],
-		visible: false
+		visible: false,
+		open: false
 	}
 
 	hideFixedMenu = () => this.setState({
@@ -80,12 +79,13 @@ export default class Navigation extends React.Component {
 		visible: true
 	})
 
-	handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+	handleItemClick = (e, { name }) => this.setState({ open: false, activeItem: name })
 
 	render() {
 		const {
 			activeItem,
-			visible
+			visible,
+			open
 		} = this.state
 
 		const MenuItems = MENU.map((item, i) => (
@@ -102,7 +102,7 @@ export default class Navigation extends React.Component {
 					 once={false}
 				 >
 					<DesktopNavigation>{MenuItems}</DesktopNavigation>
-					<MobileNavigation>{MenuItems}</MobileNavigation>
+					<MobileNavigation isOpen={open}>{MenuItems}</MobileNavigation>
 					<Hero />
 				</Visibility>
 

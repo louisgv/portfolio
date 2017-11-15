@@ -28,7 +28,6 @@ const StyledContainer = styled(FlexColumnCenterDiv)`
   	padding-top: 36vh;
   `}
 
-
 `
 
 export default class Hero extends PureComponent {

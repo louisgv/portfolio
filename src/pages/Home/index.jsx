@@ -20,11 +20,9 @@ const Container = styled(LongPage)`
 export default class Home extends PureComponent {
 	render() {
 		return (
-			<Container id="Home">
+			<Container id="Top">
 				<Navigation/>
-				<div id="page-wrap">
-					<About id="About"/>
-				</div>
+				<About id="About"/>
 				<Footer />
 			</Container>
 		);
