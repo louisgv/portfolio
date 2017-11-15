@@ -4,46 +4,25 @@ import styled from 'styled-components';
 
 import {
 	Header,
-	Container,
-	Responsive
+	Responsive,
+Divider,
+	Grid
 } from 'semantic-ui-react';
 
 import SocialMedia from 'components/SocialMedia';
 
-const StyledContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+import {
+	DesktopHackerBanner,
+	MobileHackerBanner
+} from './HackerBanner';
+
+import {FlexColumnCenterDiv} from 'utils/Layout';
+
+import { SOCIAL } from 'resume';
+
+const StyledContainer = styled(FlexColumnCenterDiv)`
 	height: 99vh;
 `
-
-const HackerBanner =({anchorClass})=> (
-	<a target="_blank" rel="noopener noreferrer" className={anchorClass} href="http://catb.org/jargon/html/H/hacker.html">
-		<Header
-			as='h2'
-			content={'#hacker'}
-			inverted
-			style={{ fontSize: '1.7em', fontWeight: 'normal' }}
-		/>
-	</a>
-)
-
-const MobileHackerBanner =()=> (
-	<Responsive
-		as={HackerBanner}
-		anchorClass="rainbow mobile"
-		{...Responsive.onlyMobile}
-	/>
-)
-
-const DesktopHackerBanner =()=> (
-	<Responsive
-		as={HackerBanner}
-		anchorClass="rainbow"
-		minWidth={Responsive.onlyTablet.minWidth}
-	/>
-)
 
 export default class Hero extends PureComponent {
 	render() {
@@ -59,7 +38,12 @@ export default class Hero extends PureComponent {
 				<DesktopHackerBanner/>
 				<MobileHackerBanner/>
 
-				<SocialMedia />
+				<Divider horizontal inverted section/>
+
+				 <Grid columns={SOCIAL.length}>
+					{ SOCIAL.map(SocialMedia) }
+				 </Grid>
+
 			</StyledContainer>
 		);
 	}

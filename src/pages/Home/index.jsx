@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import Navigation from "sections/Navigation";
 import Footer from "sections/Footer";
 
-import Hero from 'sections/Hero';
 import About from 'sections/About';
 
 import {
@@ -21,10 +20,9 @@ const Container = styled(LongPage)`
 export default class Home extends PureComponent {
 	render() {
 		return (
-			<Container id="outer-container">
+			<Container id="Home">
 				<Navigation/>
 				<div id="page-wrap">
-					<Hero id="Home"/>
 					<About id="About"/>
 				</div>
 				<Footer />

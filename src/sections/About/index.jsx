@@ -4,19 +4,24 @@ import styled from 'styled-components';
 
 import {
 	Header,
-	Container,
-	Popup,
-	Responsive
 } from 'semantic-ui-react';
+
+import {
+	FlexColumnCenterDiv
+} from 'utils/Layout';
+
+const StyledContainer = styled(FlexColumnCenterDiv)`
+	height: 180vh;
+`
 
 export default class About extends PureComponent {
 	render() {
 		return (
-			<Container id={this.props.id}>
+			<StyledContainer id={this.props.id}>
 
 				ABOUT
 
-			</Container>
+			</StyledContainer>
 		);
 	}
 }

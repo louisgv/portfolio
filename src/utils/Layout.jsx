@@ -5,6 +5,13 @@ export const FlexRowDiv = styled.div`
   flex-direction: row;
 `;
 
+export const FlexColumnCenterDiv = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+`;
+
 export const FlexColumnSection = styled.section`
   display: flex;
   flex-direction: column;
