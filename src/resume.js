@@ -1,5 +1,5 @@
 export const SECTIONS = [
-	'Top', 'About', 'Portfolio',
+	'Top', 'About', 'Portfolio', 'Resume'
  	// 'Work', 'Education', 'Skills',
 ];
 
@@ -89,3 +89,33 @@ export const SOCIALS = [
 		"uid": "louisgv"
 	},
 ]
+
+export const PORTFOLIOS = [
+	{
+		"name": "SmartLook Web",
+		"type": "Web Application",
+		"color": "orange",
+		"description": "TurboTax's real-time customer support feature",
+		"technology": "ES6, ReactJS, CSS, Glance",
+		"image": "project/project2.gif",
+		"url": "https://www.youtube.com/watch?v=E19Znq9EDZ0"
+	},
+	{
+		"name": "JanusLauncher",
+		"type": "Mobile Application",
+		"color": "red",
+		"description": "An Android launcher with hand written letter recognition capability for quick app browsing",
+		"technology": "Kotlin, Android Studio Canary, TensorFlow, Jupyter Notebook, EMNIST database",
+		"image": "project/project1.gif",
+		"url": "https://github.com/louisgv/janusLauncher"
+	},
+	{
+		"name": "VegaHub",
+		"type": "Hybrid Application",
+		"color": "yellow",
+		"description": "A hybrid mobile application used to control any robot implementing Cumulonimbus's ROS bridge",
+		"technology": "Google Mobile Kit (Bluetooth module), Firebase, Ionic, Cordova, CrossWalk, ES5, SASS",
+		"image": "project/project3.gif",
+		"url": "https://clnb.io/vega/"
+	}
+];

@@ -3,14 +3,15 @@ import React, { PureComponent } from "react";
 import styled from 'styled-components';
 
 import {
-	Label,
+	Button as Label,
 	Icon,
 	Header,
 	Segment,
 	Grid,
 	Image,
 	Responsive,
-	List
+	List,
+	Divider
 } from 'semantic-ui-react';
 
 import {
@@ -31,7 +32,14 @@ export default class About extends PureComponent {
 	render() {
 		return (
 			<StyledContainer id={this.props.id}>
-				<Grid container centered padded container columns={2} verticalAlign={'middle'}>
+				<br/>
+				<Header as='h2' inverted>
+					ABOUT ME
+				</Header>
+
+				<hr className='section-decorator'/>
+
+				<Grid container centered padded columns={2} verticalAlign={'middle'}>
 					<Grid.Column computer={4} tablet={6} mobile={16} floated={'right'}>
 						<Responsive as={Image}
 									size='medium' rounded src='selfid.jpg'
@@ -44,42 +52,39 @@ export default class About extends PureComponent {
 					</Grid.Column>
 
 					<Grid.Column textAlign={"justified"} stretched computer={8} tablet={10} mobile={16} floated={'left'}>
-						<Header as='h2' inverted>
-							About Me
-						</Header>
 
 						<Segment inverted>
 							<p>
 								I automate my job as soon and as much as possible.
 							</p>
 						</Segment>
-						<Header inverted>
+						{/* <Header inverted>
 							Interests
-						</Header>
-						<List>
+						</Header> */}
+						<Divider horizontal inverted>Interests</Divider>
+						<List animated>
 							{
 								interests.map(({name, color, icon, url}, i) =>
 									<List.Item key={i}>
-										<Label as='a' color={color} size={'huge'} href={url}>
-											<Icon name={icon}/>
-											{name}
-										</Label>
+										<Label as='a' fluid color={color} size={'huge'} href={url} labelPosition='left'
+											icon={icon} content={name}/>
 									</List.Item>
 								)
 							}
 						</List>
 
-						<Header inverted>
+						{/* <Header inverted>
 							Contact Details
-						</Header>
+						</Header> */}
+						<Divider horizontal inverted>Contact Details</Divider>
 
-						<List>
+						<List animated>
 							<List.Item>
-								<Label as='a' color='blue' size={'huge'} href='https://en.wikipedia.org/wiki/Seattle' target='_blank' icon='map' content='Seattle, Washington'/>
+								<Label as='a' fluid color='blue' labelPosition='left' size={'huge'} href='https://en.wikipedia.org/wiki/Seattle' target='_blank' icon='map' content='Seattle, Washington'/>
 							</List.Item>
 
 							<List.Item>
-								<Label as='a' color='teal' size={'huge'} href='mailto:lgvichy@gmail.com' icon='envelope' content='lgvichy@gmail.com' />
+								<Label as='a' fluid color='teal' labelPosition='left' size={'huge'} href='mailto:lgvichy@gmail.com' icon='envelope' content='lgvichy@gmail.com' />
 							</List.Item>
 						</List>
 

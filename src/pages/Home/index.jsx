@@ -9,7 +9,7 @@ import About from 'sections/About';
 
 import Portfolio from 'sections/Portfolio';
 
-import Work from 'sections/Work';
+import Resume from 'sections/Resume';
 
 import {
 	LongPage
@@ -28,7 +28,7 @@ export default class Home extends PureComponent {
 				<Navigation/>
 				<About id="About"/>
 				<Portfolio id="Portfolio"/>
-				<Work id="Work"/>
+				<Resume id="Resume"/>
 				<Footer />
 			</Container>
 		);

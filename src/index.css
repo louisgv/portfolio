@@ -24,6 +24,10 @@ a {
 	color: orange;
 }
 
+hr.section-decorator {
+	width: 4.5em;
+}
+
 /* Rainbow text shadow */
 
 .rainbow {

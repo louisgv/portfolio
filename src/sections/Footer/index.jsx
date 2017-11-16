@@ -19,15 +19,18 @@ export default class Footer extends PureComponent {
 			<StyledFooter id="Copyright">
 				<p>
 					This site was developed with
-					<a href='https://reactjs.org/' target='_blank'>{` React.js`}</a>,
-					<a href='https://react.semantic-ui.com' target='_blank'>{` Semantic-ui`}</a>, and
-					<a href='https://github.com/negomi/react-burger-menu' target='_blank'>
+					<a rel="noopener noreferrer" href='https://reactjs.org/' target='_blank'>{` React.js`}</a>,
+					<a rel="noopener noreferrer" href='https://react.semantic-ui.com' target='_blank'>{` Semantic-ui`}</a>,
+					<a rel="noopener noreferrer" href='https://github.com/negomi/react-burger-menu' target='_blank'>
 						{` react-burger-menu `}
+					</a>, and
+					<a rel="noopener noreferrer" href='https://github.com/oliviertassinari/react-swipeable-views' target='_blank'>
+						{` react-swipeable-views `}
 					</a>
 					by <br/>
-					<a href='https://github.com/louisgv' target='_blank'>{` Louis Vichy`}</a> and is licensed under
+					<a rel="noopener noreferrer" href='https://github.com/louisgv' target='_blank'>{` Louis Vichy`}</a> and is licensed under
 					the <br/>
-					<a className="rainbow mobile" style={{color: 'white'}} href='https://en.wikipedia.org/wiki/MIT_License' target='_blank'>{`MIT License`}</a>
+					<a className="rainbow mobile" style={{color: 'white'}} rel="noopener noreferrer" href='https://en.wikipedia.org/wiki/MIT_License' target='_blank'>{`MIT License`}</a>
 
 				</p>
 			</StyledFooter>

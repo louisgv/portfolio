@@ -24,6 +24,8 @@ import Hero from 'sections/Hero';
 
 import './index.css';
 
+const {location} = window;
+
 const StyledHeader = styled(HeaderContainer)`
 	top: 0;
 	width: 100%;
@@ -67,7 +69,7 @@ const MobileNavigation =({isOpen, children})=> (
 
 export default class Navigation extends React.Component {
 	state = {
-		activeItem: menus[0],
+		activeItem: location.hash ? location.hash.slice(1) : menus[0],
 		visible: false,
 		open: false
 	}
@@ -104,8 +106,8 @@ export default class Navigation extends React.Component {
 				 >
 					<DesktopNavigation>{MenuItems}</DesktopNavigation>
 					<MobileNavigation isOpen={open}>{MenuItems}</MobileNavigation>
-					<Hero />
 				</Visibility>
+				<Hero />
 
 			</StyledHeader>
 		)
