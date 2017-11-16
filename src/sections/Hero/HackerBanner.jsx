@@ -9,10 +9,10 @@ import {
 const HackerBanner =({anchorClass})=> (
 	<a target="_blank" rel="noopener noreferrer" className={anchorClass} href="http://catb.org/jargon/html/H/hacker.html">
 		<Header
-			as='h2'
+			as='h1'
 			content={'#hacker'}
 			inverted
-			style={{ fontSize: '1.7em', fontWeight: 'normal' }}
+			style={{ fontSize: '3.6em', fontWeight: 'normal' }}
 		/>
 	</a>
 )

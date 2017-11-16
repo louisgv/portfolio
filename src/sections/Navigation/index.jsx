@@ -34,6 +34,7 @@ const FixedMenu = ({children}) => (
 	<Responsive as={Menu}
 				fixed='top'
 				size='large'
+				style={{background:'black'}}
 				inverted pointing secondary
 				widths={children.length}
 				minWidth={Responsive.onlyTablet.minWidth}>
@@ -90,7 +91,7 @@ export default class Navigation extends React.Component {
 
 		const MenuItems = menus.map((item, i) => (
 			<Menu.Item as='a' href={`#${item}`} key={i} onClick={this.handleItemClick}
-				active={activeItem === item} name={item}/>
+				active={activeItem === item} name={item} color='black'/>
 		))
 
 		return(

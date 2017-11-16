@@ -9,8 +9,7 @@ import {
 	Segment,
 	Grid,
 	Image,
-	Responsive,
-	List
+	Responsive
 } from 'semantic-ui-react';
 
 import {
@@ -20,7 +19,7 @@ import {
 const StyledContainer = styled(FlexColumnCenterDiv)`
 width: 100vw;
 padding: 5vh;
-background: #222;
+background: #F9F9F9;
 `
 
 export default class Work extends PureComponent {

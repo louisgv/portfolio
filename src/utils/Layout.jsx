@@ -22,7 +22,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const FooterContainer = styled.footer`
-  height: 5vh;
+  min-height: 9vh;
 `
 
 export const NoScrollPage = styled(FlexColumnSection)`

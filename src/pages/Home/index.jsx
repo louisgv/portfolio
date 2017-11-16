@@ -6,6 +6,9 @@ import Navigation from "sections/Navigation";
 import Footer from "sections/Footer";
 
 import About from 'sections/About';
+
+import Portfolio from 'sections/Portfolio';
+
 import Work from 'sections/Work';
 
 import {
@@ -24,6 +27,7 @@ export default class Home extends PureComponent {
 			<Container id="Top">
 				<Navigation/>
 				<About id="About"/>
+				<Portfolio id="Portfolio"/>
 				<Work id="Work"/>
 				<Footer />
 			</Container>

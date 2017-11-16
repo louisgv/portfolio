@@ -1,4 +1,7 @@
-export const SECTIONS = ['Top', 'About', 'Work', 'Education', 'Skills', 'Portfolio'];
+export const SECTIONS = [
+	'Top', 'About', 'Portfolio',
+ 	// 'Work', 'Education', 'Skills',
+];
 
 export const BASIC = {
 	name: "Louis Vichy",
@@ -49,7 +52,7 @@ export const INTERESTS = [
 	},
 	{
 		"name": "Decentralization",
-		"color": "brown",
+		"color": "violet",
 		"icon": "unlinkify",
 		"url": "http://bfy.tw/DjIr",
 	}

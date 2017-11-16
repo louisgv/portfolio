@@ -44,7 +44,7 @@ export default class About extends PureComponent {
 					</Grid.Column>
 
 					<Grid.Column textAlign={"justified"} stretched computer={8} tablet={10} mobile={16} floated={'left'}>
-						<Header inverted>
+						<Header as='h2' inverted>
 							About Me
 						</Header>
 
