@@ -5,9 +5,24 @@ export const SECTIONS = [
 
 export const BASIC = {
 	name: "Louis Vichy",
-	label: "#hacker",
-	picture: "",
-	email: "lgvichy@gmail.com"
+	tagline: "#hacker",
+	taglineUrl: "http://catb.org/jargon/html/H/hacker.html",
+	email: "lgvichy@gmail.com",
+	logo: "id/icon-white.png",
+	url: "https://github.com/louisgv/"
+};
+
+export const PHOTO = {
+	normal: 'id/selfid.jpg',
+	small: 'id/selfid-small.jpg'
+}
+
+export const CONTACT = {
+	email: 'lgvichy@gmail.com',
+	location: {
+		name: 'Seattle, Washington',
+		url: 'https://en.wikipedia.org/wiki/Seattle'
+	}
 };
 
 export const HOBBIES = [
@@ -119,3 +134,32 @@ export const PORTFOLIOS = [
 		"url": "https://clnb.io/vega/"
 	}
 ];
+
+export const RESUME = {
+	"embedded": "https://docs.google.com/document/d/1_UE4yS3lA81l3HdBwhKABcKXAJIO0HyDkcaOxNAjJPs/preview",
+	"external": "https://docs.google.com/document/d/1_UE4yS3lA81l3HdBwhKABcKXAJIO0HyDkcaOxNAjJPs/edit?usp=sharing"
+};
+
+export const REFERENCES = [
+	{
+		url: 'https://reactjs.org/',
+		name: 'React.js'
+	},
+	{
+		url: 'https://react.semantic-ui.com/',
+		name: 'Semantic-ui'
+	},
+	{
+		url: 'https://github.com/negomi/react-burger-menu/',
+		name: 'react-burger-menu'
+	},
+	{
+		url: 'https://github.com/oliviertassinari/react-swipeable-views',
+		name: 'react-swipeable-views'
+	}
+];
+
+export const LICENSE = {
+	name: 'MIT License',
+	url: 'https://en.wikipedia.org/wiki/MIT_License'
+};

@@ -15,6 +15,8 @@ import {
 	FlexColumnCenterDiv
 } from 'utils/Layout';
 
+import {RESUME as resume} from 'resume';
+
 const StyledContainer = styled(FlexColumnCenterDiv)`
 width: 100vw;
 padding: 5vh;
@@ -33,7 +35,7 @@ export default class Portfolio extends PureComponent {
 
 				<Button
 					content='Read on google doc' icon='bookmark outline'
-					labelPosition='left' inverted as='a' color='red' size={'huge'} rel="noopener noreferrer" target="_blank" href={'https://docs.google.com/document/d/1_UE4yS3lA81l3HdBwhKABcKXAJIO0HyDkcaOxNAjJPs/edit?usp=sharing'} />
+					labelPosition='left' inverted as='a' color='red' size={'huge'} rel="noopener noreferrer" target="_blank" href={resume.external} />
 				<Divider horizontal inverted>Or</Divider>
 				<Responsive as={'iframe'}
 						title='resume'
@@ -41,7 +43,7 @@ export default class Portfolio extends PureComponent {
 							width:'81vw',
 							height: '90vh'
 						}}
-						src="https://docs.google.com/document/d/1_UE4yS3lA81l3HdBwhKABcKXAJIO0HyDkcaOxNAjJPs/preview"
+						src={resume.embedded}
 						minWidth={Responsive.onlyTablet.minWidth}/>
 				<Responsive as={Header} inverted
 						{...Responsive.onlyMobile}>

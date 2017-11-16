@@ -18,6 +18,8 @@ import {
 } from 'utils/Layout';
 
 import {
+	CONTACT as contact,
+	PHOTO as photo,
 	INTERESTS as interests
 } from 'resume';
 
@@ -41,11 +43,11 @@ export default class About extends PureComponent {
 				<Grid container centered padded columns={2} verticalAlign={'middle'}>
 					<Grid.Column computer={4} tablet={6} mobile={16} floated={'right'}>
 						<Responsive as={Image}
-									size='medium' rounded src='selfid.jpg'
+									size='medium' rounded src={photo.normal}
 									minWidth={Responsive.onlyTablet.minWidth} />
 
 						<Responsive as={Image}
-									size='medium' rounded src='selfid-small.jpg'
+									size='medium' rounded src={photo.small}
 									{...Responsive.onlyMobile}/>
 
 					</Grid.Column>
@@ -79,11 +81,16 @@ export default class About extends PureComponent {
 
 						<List animated>
 							<List.Item>
-								<Label as='a' fluid color='blue' labelPosition='left' size={'huge'} href='https://en.wikipedia.org/wiki/Seattle' target='_blank' icon='map' content='Seattle, Washington'/>
+								<Label as='a' fluid color='blue' labelPosition='left' size={'huge'}
+									target='_blank' icon='map'
+									href={contact.location.url}
+									content={contact.location.name}/>
 							</List.Item>
 
 							<List.Item>
-								<Label as='a' fluid color='teal' labelPosition='left' size={'huge'} href='mailto:lgvichy@gmail.com' icon='envelope' content='lgvichy@gmail.com' />
+								<Label as='a' fluid color='teal' labelPosition='left' size={'huge'} icon='envelope'
+									href={`mailto:${contact.email}`}
+									content={contact.email} />
 							</List.Item>
 						</List>
 

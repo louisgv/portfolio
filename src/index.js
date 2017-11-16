@@ -18,7 +18,7 @@ import './index.css';
 
 // Global page, so it also include some section
 const App = () => (
-	<Router basename="/">
+	<Router basename="/hhn2884/portfolio/">
 		<TransitionGroup>
 			<AnimatedSwitch>
 				<Route exact path="/" component={Home} />

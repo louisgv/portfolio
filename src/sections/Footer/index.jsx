@@ -4,6 +4,12 @@ import styled from 'styled-components';
 
 import {FooterContainer} from 'utils/Layout';
 
+import {
+	BASIC as basic,
+	REFERENCES as references,
+	LICENSE as license
+} from 'resume';
+
 const StyledFooter = styled(FooterContainer)`
   line-height: 24px;
 	width: 100vw;
@@ -19,19 +25,20 @@ export default class Footer extends PureComponent {
 			<StyledFooter id="Copyright">
 				<p>
 					This site was developed with
-					<a rel="noopener noreferrer" href='https://reactjs.org/' target='_blank'>{` React.js`}</a>,
-					<a rel="noopener noreferrer" href='https://react.semantic-ui.com' target='_blank'>{` Semantic-ui`}</a>,
-					<a rel="noopener noreferrer" href='https://github.com/negomi/react-burger-menu' target='_blank'>
-						{` react-burger-menu `}
-					</a>, and
-					<a rel="noopener noreferrer" href='https://github.com/oliviertassinari/react-swipeable-views' target='_blank'>
-						{` react-swipeable-views `}
-					</a>
+					{
+						references.map(({name, url}, i) =>
+							<span key={i}>
+								<a rel="noopener noreferrer" href={url} target='_blank'>{` ${name}`}</a>{', '}
+							</span>
+						)
+					}
 					by <br/>
-					<a rel="noopener noreferrer" href='https://github.com/louisgv' target='_blank'>{` Louis Vichy`}</a> and is licensed under
-					the <br/>
-					<a className="rainbow mobile" style={{color: 'white'}} rel="noopener noreferrer" href='https://en.wikipedia.org/wiki/MIT_License' target='_blank'>{`MIT License`}</a>
-
+					<a rel="noopener noreferrer" href={basic.url} target='_blank'>{` ${basic.name} `}</a>
+					and is licensed under the <br/>
+					<a className="rainbow mobile" style={{color: 'white'}} rel="noopener noreferrer" target='_blank'
+						href={license.url}>
+						{license.name}
+					</a>
 				</p>
 			</StyledFooter>
 		);

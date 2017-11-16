@@ -24,8 +24,8 @@ const Container = styled(LongPage)`
 export default class Home extends PureComponent {
 	render() {
 		return (
-			<Container id="Top">
-				<Navigation/>
+			<Container>
+				<Navigation id="Top"/>
 				<About id="About"/>
 				<Portfolio id="Portfolio"/>
 				<Resume id="Resume"/>
