@@ -45,7 +45,7 @@ export default class AnimatedSwitch extends Switch {
   		transform: Animated.template`
 			scale(${this.state.animate.interpolate({
 				inputRange: [0, 1],
-				outputRange: ["0.9", "1"]
+				outputRange: ["1.08", "1"]
 			})})
 			`
   	};

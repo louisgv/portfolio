@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 import {
 	Button as Label,
-	Icon,
 	Header,
 	Segment,
 	Grid,

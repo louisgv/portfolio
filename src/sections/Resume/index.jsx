@@ -6,12 +6,9 @@ import styled from 'styled-components';
 
 import {
 	Header,
-	Grid,
-	Image,
 	Divider,
 	Responsive,
-	Button,
-	Icon
+	Button
 } from 'semantic-ui-react';
 
 import {
