@@ -41,10 +41,10 @@ export default class Portfolio extends PureComponent {
 				<Responsive as={'iframe'}
 						title='resume'
 						style={{
-							width:'80vw',
+							width:'81vw',
 							height: '90vh'
 						}}
-						src="https://docs.google.com/document/d/e/2PACX-1vT9bDNvMitcORMx7nmL0-zOwDkTPMRZXuwR8OwN0j_1A1IMqm9hX4X5zY7_a27Os_CSGGnCJPkHwVYp/pub?embedded=true"
+						src="https://docs.google.com/document/d/1_UE4yS3lA81l3HdBwhKABcKXAJIO0HyDkcaOxNAjJPs/preview"
 						minWidth={Responsive.onlyTablet.minWidth}/>
 				<Responsive as={Header} inverted
 						{...Responsive.onlyMobile}>
