@@ -136,7 +136,8 @@ export const PORTFOLIOS = [
 ];
 
 export const RESUME = {
-	"embedded": "https://docs.google.com/document/d/1_UE4yS3lA81l3HdBwhKABcKXAJIO0HyDkcaOxNAjJPs/preview",
+	"embedded": "https://docs.google.com/document/d/e/2PACX-1vT9bDNvMitcORMx7nmL0-zOwDkTPMRZXuwR8OwN0j_1A1IMqm9hX4X5zY7_a27Os_CSGGnCJPkHwVYp/pub?embedded=true",
+	// "embedded": "https://docs.google.com/document/d/1_UE4yS3lA81l3HdBwhKABcKXAJIO0HyDkcaOxNAjJPs/preview",
 	"external": "https://docs.google.com/document/d/1_UE4yS3lA81l3HdBwhKABcKXAJIO0HyDkcaOxNAjJPs/edit?usp=sharing"
 };
 

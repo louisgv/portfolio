@@ -43,6 +43,7 @@ export default class Portfolio extends PureComponent {
 				<Header as="h2">
 					PORTFOLIO
 				</Header>
+				
 				<hr className='section-decorator'/>
 
 				<AutoPlaySwipeableViews autoplay
@@ -85,16 +86,6 @@ export default class Portfolio extends PureComponent {
 						</Grid>
 					)}
 				</AutoPlaySwipeableViews>
-				{/*
-					<Card
-						color={color}
-						image={<Image src={image} />}
-						header={name}
-						meta={type}
-						description={description}
-					/>
-					*/}
-
 			</StyledContainer>
 		);
 	}
