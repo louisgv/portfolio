@@ -19,7 +19,7 @@ import './index.css';
 const {location} = window;
 
 const basenameMap = {
-	'': '/'
+	'': '/',
 	'people.rit.edu' : location.pathname.slice(0,-1),
 	'louisgv.github.io' : '/portfolio'
 }

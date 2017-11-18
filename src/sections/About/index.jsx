@@ -67,7 +67,8 @@ export default class About extends PureComponent {
 							{
 								interests.map(({name, color, icon, url}, i) =>
 									<List.Item key={i}>
-										<Label as='a' fluid color={color} size={'huge'} href={url} labelPosition='left'
+										<Label as='a' rel="noopener noreferrer" target="_blank"
+											fluid color={color} size={'huge'} href={url} labelPosition='left'
 											icon={icon} content={name}/>
 									</List.Item>
 								)

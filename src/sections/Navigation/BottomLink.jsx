@@ -24,6 +24,13 @@ export const BottomLink = styled(Link)`
 	position: absolute;
 	bottom: 3.6vh;
 	cursor: pointer;
+	transition: 0.36s;
+	&:hover {
+		transform: translateY(-9px) scale(1.8);
+		img {
+			animation: none;
+		}
+	}
 `
 
 export const PulsingIcon = styled(Image)`

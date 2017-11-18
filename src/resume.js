@@ -57,19 +57,19 @@ export const INTERESTS = [
 		"name": "Lifespan extension",
 		"color": "pink",
 		"icon": "power",
-		"url": "http://bfy.tw/DjIj",
+		"url": "https://lmgtfy.com/?s=d&q=Lifespan+extension",
 	},
 	{
 		"name": "Machine learning",
 		"color": "purple",
 		"icon": "linkify",
-		"url": "http://bfy.tw/DjIj",
+		"url": "https://lmgtfy.com/?s=d&q=Machine+learning",
 	},
 	{
 		"name": "Decentralization",
 		"color": "violet",
 		"icon": "unlinkify",
-		"url": "http://bfy.tw/DjIr",
+		"url": "https://lmgtfy.com/?s=d&q=Decentralization",
 	}
 ]
 
@@ -109,28 +109,49 @@ export const PORTFOLIOS = [
 	{
 		"name": "SmartLook Web",
 		"type": "Web Application",
-		"color": "orange",
+		"color": "red",
 		"description": "TurboTax's real-time customer support feature",
-		"technology": "ES6, ReactJS, CSS, Glance",
-		"image": "project/project2.gif",
+		"technology": "ES6, React.js, CSS, Glance",
+		"image": "project/smartlook_mobile.gif",
+		"role": "Lead Front-end Engineer",
+		"license": "PROPRIETARY",
+		"status": "In production, TurboTax 2016",
 		"url": "https://www.youtube.com/watch?v=E19Znq9EDZ0"
+	},
+	{
+		"name": "Cryptoville",
+		"type": "Web Application",
+		"color": "orange",
+		"description": "Decentralized market making platform for agriculture",
+		"license": "MIT",
+		"role": "Core Contributor",
+		"technology": "React.js, Lisk",
+		"image": "project/cryptoville.gif",
+		"status": "Opensource Project",
+		"url": "https://www.crypto-ville.herokuapp.com"
 	},
 	{
 		"name": "JanusLauncher",
 		"type": "Mobile Application",
-		"color": "red",
+		"color": "yellow",
 		"description": "An Android launcher with hand written letter recognition capability for quick app browsing",
+		"role": "Author",
+		"license": "MIT",
 		"technology": "Kotlin, Android Studio Canary, TensorFlow, Jupyter Notebook, EMNIST database",
-		"image": "project/project1.gif",
+		"image": "project/janusLauncher.gif",
+		"status": "Opensource Project",
 		"url": "https://github.com/louisgv/janusLauncher"
 	},
 	{
 		"name": "VegaHub",
 		"type": "Hybrid Application",
-		"color": "yellow",
+		"color": "olive",
 		"description": "A hybrid mobile application used to control any robot implementing Cumulonimbus's ROS bridge",
+		"role": "Lead Front-end Engineer",
+		"license": "PROPRIETARY",
+		"status": "N/A",
 		"technology": "Google Mobile Kit (Bluetooth module), Firebase, Ionic, Cordova, CrossWalk, ES5, SASS",
-		"image": "project/project3.gif",
+		"image": "project/vegahub.gif",
 		"url": "https://clnb.io/vega/"
 	}
 ];
